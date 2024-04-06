@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nehal Sharma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Nehal Sharma</h1>
+        </header>
+        <main>
+            <div class="image-container">
+                <img src="img/WhatsApp Image 2024-04-06 at 3.24.55 PM.jpeg" alt="Beautiful Image">
+            </div>
+            <div class="quotes-container">
+                <p>"In all the world, there is no heart for me like yours."</p>
+                <p>"I love you not only for what you are, but for what I am when I am with you."</p>
+                <p>"You are the source of my joy, the center of my world, and the whole of my heart."</p>
+            </div>
+            <div class="proposal">
+                <p>Dear Nehal,</p>
+                <p>I want you to know that you mean everything to me. Will you make me the happiest person by being mine forever?</p>
+                <p>With all my love</p>
+                <p>I want you to know that you mean everything to me. Will you make me the happiest person by being mine forever?</p>
+                <p>With all my love,</p>
+                <p>[vedant shukla]</p>
+                <div class="response-buttons">
+                    <button onclick="respondToProposal(true)">Yes</button>
+                    <button onclick="respondToProposal(false)">No</button>
+                </div>
+                <p id="response-message"></p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function respondToProposal(accepted) {
+            var responseMessage = document.getElementById('response-message');
+            if (accepted) {
+                responseMessage.textContent = "That's wonderful! I love you too!";
+            } else {
+                responseMessage.textContent = "I understand. Let's stay friends.";
+            }
+        }
+    </script>
+</body>
+
+</html>
